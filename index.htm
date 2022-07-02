@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mukta:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- main font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mukta:wght@500&family=Roboto+Mono:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Logoicon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="NavBar">
+      <nav>
+        <ul>
+          <div class="logoCov">
+            <span class="material-symbols-outlined"> fingerprint </span>
+            <a href="/" class="Logo">MINE</a>
+          </div>
+          <li><a href="/" class="navItem selectNavItem" id="navItems">Home</a></li>
+          <li><a href="/" class="navItem" id="navItems">About_me</a></li>
+          <li><a href="/" class="navItem" id="navItems">Contact_me</a></li>
+          <button class="resp-bar-btn">
+            <i class="fa fa-bars" id="openbtn" onclick="OpenMenu()"></i>
+            <i class="fa fa-times" aria-hidden="true" id="closebtn" onclick="closeMenu()"></i>
+       
+            <!-- <i class="fa fa-bars"></i> -->
+          </button>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="mobNav" id="mobnavs">
+      <ul>
+         <li class="selectMob"><a href="" >Home</a></li>
+         <li><a href="" >About_me</a></li>
+         <li><a href="" >Contact_me</a></li>
+      </ul>
+      </div>
+
+
+
+    <div class="Container Banner-Con">
+
+            <img src="./assets/image s(1).png" class="myPic">
+            <div class="BannerText">
+                <h3>HEY,I'm Ashish</h3>
+                <h1>I Am <span class="fsd">FULL STACK DEVELOPER<span></h1>
+                <p>" Take Time Think better make it reusable.<br/>
+                  Implement it and try to add new feature.<br/>
+                  use it just like while loop and be a good developer."</p>
+                  
+            </div>
+
+    </div>
+
+    <div class="mob-Banner-Cov">
+      
+      <div class="mobbannertext">
+
+        <h3>HEY,I'm Ashish</h3>
+        <h1>I Am <span class="fsd">FULL STACK DEVELOPER<span></h1>
+          <h1 class="forSpace"></h1>
+          <p>" Take Time Think better make it reusable.
+            Implement it and try to add new feature.
+            use it just like while loop and be a good developer."</p>
+          </div>
+          <img src="./assets/image s(1).png"  class="mobpic">
+    </div>
+    <div class="Container second-con" >
+        <div class="social-handle">
+          <span><a href="" class="socialT"><i class="fa fa-github" aria-hidden="true"></i> Github</a></span>
+          <span>|</span>
+          <span><a href="" class="socialT"><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</a></span>
+          <span>|</span>
+          <span><a href="" class="socialT"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></span>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>

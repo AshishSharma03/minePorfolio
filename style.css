@@ -1,0 +1,258 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Mukta', sans-serif; */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background-color:#161616;
+    color: white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 0;
+  font-size: 50px;
+  color: rgb(0, 221, 255);
+  text-shadow: 0px 0px 50px rgb(0, 221, 255);
+}
+
+
+.NavBar{
+  
+    padding: 20px 50px;
+}
+
+.NavBar{
+ position: sticky;
+ top:0px;
+ animation: navAnimation 2s initial;
+}
+
+@keyframes navAnimation{
+    0%{transition: 2;}
+}
+.NavBar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+.NavBar li{
+    list-style-type: none;
+}
+
+
+.navItem{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 0px 5px;
+    padding: 10px 10px;
+}
+
+.navItem:hover{
+    background-color: rgb(0, 174, 255);
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 5px rgb(0, 174, 255,0.1);
+}
+
+.selectNavItem{
+    border-bottom: #ffffff;
+    background-color:red;   
+    border-radius: 5px;
+    box-shadow: 0px 0px 100px 5px rgba(255, 0, 0, 1);
+}
+.selectNavItem:hover{
+    background-color:red;
+    box-shadow: 0px 0px 10px 5px rgba(255, 0, 0, 0.1);
+}
+.logoCov{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.Logo{
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.second-con{
+    z-index: 9999;
+    background-color:rgb(0, 174, 255); 
+    height: 15vh;
+    box-shadow: 0 0 100px 50px rgb(0, 0, 0);
+
+}
+
+.resp-bar-btn{
+    padding: 10px;
+    background:transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.resp-bar-btn:hover{
+    background-color: rgb(0, 174, 255);
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 5px rgb(0, 174, 255,0.1);
+}
+.resp-bar-btn *{
+    font-size: 25px;
+}
+
+
+.myPic{
+    /* opacity: 0.9; */
+    z-index: -1;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.1)));
+    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0)); */
+}
+
+.BannerText{
+    font-size: 20px;
+
+}
+.BannerText *{
+    padding: 5px 0px;
+}
+.BannerText > h3{
+    color: greenyellow;
+    font-size: 30px;
+}
+
+.BannerText > p{
+    /* text-align:justify; */
+    margin: 0px 10px;
+    color: #6e6e6e;
+}
+
+
+.fsd{
+    text-shadow: 0px 0px 80px rgb(255, 255, 255);
+    animation: fsdText infinite  9s;
+}
+
+@keyframes fsdText {
+    0%{text-shadow: 0px 0px 80px rgb(255, 255, 255);}
+    50%{text-shadow: 0px 0px 20px rgb(255, 255, 255);}
+    50%{text-shadow: 0px 0px 0px rgb(255, 255, 255);}
+    100%{text-shadow: 0px 0px 70px rgb(255, 255, 255);}
+}
+.fsd::selection{
+    background-color: black;
+}
+
+
+.mobNav{
+    z-index: 1;
+    width: 100%;
+    position: sticky;
+    top: 60px;
+    background-color: #000000c6;
+}
+
+
+
+.mobNav *{
+    padding: 10px 10px;
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+
+.mobNav li:hover{
+    /* padding: 20px;
+     */
+     background-color: rgb(0, 174, 255);
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px 5px rgb(0, 174, 255,0.1);
+}
+
+.mobpic{
+    z-index: -1;
+    width: 80%;
+    margin-top: -80px;
+    -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.1)));
+
+
+}
+.mob-Banner-Cov{
+    padding-top:10px ;
+    min-height: 60vh;
+    justify-content: center;
+    text-align: center;
+}
+
+.mobbannertext {
+    padding: 10px  5px;
+
+}
+.mobbannertext > h3{
+    text-align: center;
+    color: greenyellow;
+}
+.mobbannertext p{
+    text-align: justify;
+    padding: 10px;
+    color: #6e6e6e;
+}
+@media screen and (min-width:600px) {
+    .resp-bar-btn{
+        display: none;
+    }
+    .mobNav{
+        display: none;
+    }
+    .mob-Banner-Cov{
+        display: none;
+    }
+    .second-con{
+        height: 15vh;
+        padding: 0px;
+    }
+}
+
+.socialT{
+    text-decoration: none;
+    color: #225c75;
+    font-size: 20px;
+    font-weight: 800;
+}:hover{
+    color: #ffffff;
+}
+
+@media screen and (max-width: 600px){
+    .NavBar{padding:10px;}
+    .navItem{display: none;}
+   .resp-bar-btn{display: block;}
+   .Banner-Con{
+   display: none;
+   }
+   .mobNav{
+    display: none;
+    }
+   
+
+}
+
